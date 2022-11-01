@@ -1,7 +1,6 @@
 import mongoose, {Schema} from 'mongoose'
 
 const userSchema = new Schema({
-    _id: { type: mongoose.Types.ObjectId },
     username: {
         type: String,
         required: [true, 'Name is required'],
@@ -20,6 +19,10 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
-})
+}, 
+{
+    timestamps: true
+}
+)
 
 export default mongoose.model('User', userSchema)
