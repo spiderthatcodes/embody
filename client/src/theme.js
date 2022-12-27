@@ -1,5 +1,6 @@
 export const colors = {
-    background: '#ffffff',
+    white: '#ffffff',
     peach: '#f4cec3',
-    mint: '#829b7a'
+    mint: '#829b7a',
+    black: '#2b2b2b'
 }
