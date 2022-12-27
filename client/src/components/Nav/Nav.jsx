@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from '../../constants/Logo/Logo'
-import Links from '../../constants/Links/Links'
+import Logo from '../Logo/Logo'
+import Links from '../Links/Links'
 import { Container } from './style'
 
 const Nav = () => {

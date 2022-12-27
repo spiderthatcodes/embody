@@ -6,7 +6,6 @@ function App() {
   return (
     <>
     <Router>
-      <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<Home />} />
@@ -16,7 +15,6 @@ function App() {
         <Route path='/contact' element={<Home />} />
         {/* <Route path='/cart' element={<Home />} /> */}
       </Routes>
-      {/* footer */}
     </Router>
   </>
   );
