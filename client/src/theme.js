@@ -1,6 +1,6 @@
 export const colors = {
     white: '#ffffff',
     peach: '#f4cec3',
-    mint: '#829b7a',
+    mint: '#a9cd9e',
     black: '#2b2b2b'
 }

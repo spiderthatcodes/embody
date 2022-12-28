@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Container, LogoContainer, Title, LinkContainer, Subtitle } from './style';
 
 const Nav = () => {
+    const navigate = useNavigate();
+
     return (
         <Container>
-            <LogoContainer>
+            <LogoContainer onClick={() => navigate('/')}>
                 <Title>Embody</Title>
                 <Subtitle>Coaching & Counseling</Subtitle>
             </LogoContainer>
