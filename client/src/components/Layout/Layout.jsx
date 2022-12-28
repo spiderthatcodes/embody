@@ -1,12 +1,13 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
+import { Container } from './style';
 
 const Layout = ({ children }) => (
-    <div>
+    <Container>
         <Nav />
         <div>{children}</div>
         {/* footer here */}
-    </div>
+    </Container>
 )
 
 export default Layout;

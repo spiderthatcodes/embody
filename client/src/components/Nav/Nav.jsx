@@ -1,15 +1,21 @@
-import React from 'react'
-import Logo from '../Logo/Logo'
-import Links from '../Links/Links'
-import { Container } from './style'
+import { Link } from 'react-router-dom';
+import { Container, LogoContainer, Title, LinkContainer } from './style';
 
 const Nav = () => {
-  return (
-    <Container>
-        <Logo />
-        <Links />
-    </Container>
-  )
-}
+    return (
+        <Container>
+            <LogoContainer>
+                <Title>Embody</Title>
+                <p>Coaching & Counseling</p>
+            </LogoContainer>
+            <LinkContainer>
+                <Link to='/about'>About</Link>
+                <Link to='/services'>Services</Link>
+                <Link to='/blog'>Blog</Link>
+                <Link to='/contact'>Contact</Link>
+            </LinkContainer>
+        </Container>
+    );
+};
 
-export default Nav
+export default Nav;
