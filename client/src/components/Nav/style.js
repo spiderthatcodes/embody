@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: flex;
-    width: 100%;
+    /* display: flex; */
+    padding: 0 80px;
+    /* align-items: center;
+    justify-content: space-between; */
 `;
 
 export const LinkContainer = styled.div`
     display: flex;
-    width: 25%;
+    width: 300px;
     justify-content: space-between;
 `;
 
