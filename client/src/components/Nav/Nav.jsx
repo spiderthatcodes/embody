@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Container, LogoContainer, Title, LinkContainer } from './style';
+import { Container, LogoContainer, Title, LinkContainer, Subtitle } from './style';
 
 const Nav = () => {
     return (
         <Container>
             <LogoContainer>
                 <Title>Embody</Title>
-                <p>Coaching & Counseling</p>
+                <Subtitle>Coaching & Counseling</Subtitle>
             </LogoContainer>
             <LinkContainer>
                 <Link to='/about'>About</Link>
