@@ -6,7 +6,12 @@ export const NumberedCardContainer = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
 `;
 
-export const SectionContainer = styled.div``
+export const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+`
 
 export const SectionHeading = styled.h1`
     text-align: center;

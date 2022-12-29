@@ -1,6 +1,7 @@
 import { TIC } from '../../constants/TICpoints';
 import NumberedCard from '../NumberedCard/NumberedCard';
-import { NumberedCardContainer, SectionHeading } from './style';
+import Button from '../Button/Button'
+import { NumberedCardContainer, SectionHeading, ButtonContainer } from './style';
 
 const TICSection = () => {
     return (
@@ -15,6 +16,9 @@ const TICSection = () => {
                     />
                 ))}
             </NumberedCardContainer>
+            <ButtonContainer>
+                <Button text='Learn More' route='/contact' />
+            </ButtonContainer>
         </div>
     );
 };
