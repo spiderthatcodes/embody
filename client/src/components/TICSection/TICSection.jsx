@@ -8,8 +8,9 @@ const TICSection = () => {
         <div>
             <SectionHeading>Trauma informed coaching and counseling</SectionHeading>
             <NumberedCardContainer>
-                {TIC.map((point) => (
+                {TIC.map((point, index) => (
                     <NumberedCard
+                        key={index}
                         number={point.number}
                         heading={point.heading}
                         text={point.text}

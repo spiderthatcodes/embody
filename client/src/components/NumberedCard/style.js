@@ -8,7 +8,9 @@ export const CardContainer = styled.div`
     text-align: center;
 
     h1 {
-        color: ${colors.mint}
+        color: ${colors.mint};
+        font-size: 50px;
+        line-height: 10px;
     }
 
     h2 {
@@ -19,7 +21,6 @@ export const CardContainer = styled.div`
 
     span {
         background: linear-gradient(to top, ${colors.peach} 50%, transparent 50%);
-        width: 102%;
     }
 
     #highlight {
