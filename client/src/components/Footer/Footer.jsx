@@ -4,7 +4,6 @@ import LeafPanel from '../LeafPanel/LeafPanel';
 
 const Footer = () => {
     const location = useLocation();
-    console.log(location.pathname);
 
 
     return (

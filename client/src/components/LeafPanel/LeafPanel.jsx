@@ -2,7 +2,9 @@
 
 const LeafPanel = ({page}) => {
   return (
-    <div>LeafPanel on {page}</div>
+    <div>
+        <h1>{page}</h1>
+    </div>
   )
 }
 
