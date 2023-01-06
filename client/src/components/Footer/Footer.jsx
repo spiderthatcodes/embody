@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { Container } from './style';
+import { Container, EmailBar } from './style';
 import LeafPanel from '../LeafPanel/LeafPanel';
 
 const Footer = () => {
@@ -10,7 +10,10 @@ const Footer = () => {
         <Container>
             <LeafPanel page={location.pathname} />
             <div id='contact-bar'></div>
-            <div id='email-bar'></div>
+            <EmailBar>
+                <p>Personalized coaching & counseling</p>
+                <p>embody@gmail.com</p>
+            </EmailBar>
         </Container>
     );
 };
