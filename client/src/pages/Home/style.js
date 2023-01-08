@@ -36,3 +36,18 @@ export const Leaves = styled.div`
     width: 100%;
     height: 50vh;
 `;
+
+export const PeachPanel = styled.div`
+    background-color: ${colors.peach};
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const WhiteText = styled.p`
+    color: ${colors.white};
+    font-size: 40px;
+    text-align: center;
+    width: 45%;
+`;
