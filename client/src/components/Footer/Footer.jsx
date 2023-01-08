@@ -1,4 +1,4 @@
-import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {
     Container,
     EmailBar,
@@ -8,15 +8,14 @@ import {
     LinkContainer,
     NavRow,
 } from './style';
-import LeafPanel from '../LeafPanel/LeafPanel';
+
 
 const Footer = () => {
-    const location = useLocation();
+    // const location = useLocation();
     const navigate = useNavigate();
 
     return (
         <Container>
-            <LeafPanel page={location.pathname} />
             <NavRow>
                 <LogoContainer onClick={() => navigate('/')}>
                     <Title>Embody</Title>

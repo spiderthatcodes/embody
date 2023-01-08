@@ -1,11 +1,18 @@
+import { Container, Left, Right } from './style';
+import leaves from '../../resources/leaves.jpg';
 
+const LeafPanel = () => {
+    return (
+        <Container>
+            <Left>
+                <img
+                    src={leaves}
+                    alt='leaves'
+                />
+            </Left>
+            <Right></Right>
+        </Container>
+    );
+};
 
-const LeafPanel = ({page}) => {
-  return (
-    <div>
-        <h1>{page}</h1>
-    </div>
-  )
-}
-
-export default LeafPanel
+export default LeafPanel;
