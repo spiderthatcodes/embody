@@ -6,5 +6,5 @@ export const BlackButton = styled.button`
     color: ${colors.white};
     font-size: 24px;
     font-weight: 300;
-    padding: 14px 60px;
+    padding: 12px 50px;
 `;
