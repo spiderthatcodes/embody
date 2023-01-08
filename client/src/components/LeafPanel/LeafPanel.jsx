@@ -1,16 +1,11 @@
 import { BlackText, Container, Left, Right, WhiteText } from './style';
-import leaves from '../../resources/leaves.jpg';
+
 import Button from '../Button/Button';
 
 const LeafPanel = () => {
     return (
         <Container>
-            <Left>
-                <img
-                    src={leaves}
-                    alt='leaves'
-                />
-            </Left>
+            <Left />
             <Right>
                 <WhiteText>Feeling stuck?</WhiteText>
                 <WhiteText>Unsure what you need?</WhiteText>

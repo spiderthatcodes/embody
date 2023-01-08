@@ -1,25 +1,20 @@
 import styled from 'styled-components';
 import { colors } from '../../theme';
+import leaves from '../../resources/leaves.jpg';
 
 export const Container = styled.div`
-    width: 100%;
-    height: 550px;
-    display: flex;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 `;
 
 export const Left = styled.div`
-    width: 50%;
-    height: 550px;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
+    background-image: url(${leaves});
+    background-size: cover;
 `;
 
 export const Right = styled.div`
     background-color: ${colors.peach};
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;

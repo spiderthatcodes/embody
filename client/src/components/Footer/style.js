@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { colors } from '../../theme';
 
 export const Container = styled.div`
-    /* position: fixed;
-    bottom: 0; */
     width: 100%;
 `;
 
