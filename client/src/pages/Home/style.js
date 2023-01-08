@@ -51,3 +51,12 @@ export const WhiteText = styled.p`
     text-align: center;
     width: 45%;
 `;
+
+export const GreetingsPanel = styled.div`
+    height: 75vh;
+    
+    h1 {
+        color: ${colors.peach};
+        font-size: 36px;
+    }
+`;
