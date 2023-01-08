@@ -1,11 +1,11 @@
 import { TIC } from '../../constants/TICpoints';
 import NumberedCard from '../NumberedCard/NumberedCard';
 import Button from '../Button/Button'
-import { NumberedCardContainer, SectionHeading, ButtonContainer } from './style';
+import { NumberedCardContainer, SectionHeading, ButtonContainer, Container } from './style';
 
 const TICSection = () => {
     return (
-        <div>
+        <Container>
             <SectionHeading>Trauma informed coaching and counseling</SectionHeading>
             <NumberedCardContainer>
                 {TIC.map((point, index) => (
@@ -20,7 +20,7 @@ const TICSection = () => {
             <ButtonContainer>
                 <Button text='Learn More' route='/contact' />
             </ButtonContainer>
-        </div>
+        </Container>
     );
 };
 

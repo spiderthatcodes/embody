@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { colors } from '../../theme';
 import roses from '../../resources/roses.jpg';
+import leaves from '../../resources/leaves.jpg';
 
 export const RosePanel = styled.div`
     height: 75vh;
@@ -27,4 +28,11 @@ export const BlackText = styled.p`
     color: ${colors.black};
     font-size: 56px;
     text-align: center;
+`;
+
+export const Leaves = styled.div`
+    background-image: url(${leaves});
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
 `;
