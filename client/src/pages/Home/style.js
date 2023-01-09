@@ -55,31 +55,33 @@ export const WhiteText = styled.p`
 export const GreetingsPanel = styled.div`
     height: 75vh;
     padding: 5% 10%;
-    
-    h1 {
-        color: ${colors.peach};
-        font-size: 36px;
-        line-height: 1px;
-    }
-
-    h2 {
-        font-size: 48px;
-        padding-left: 20px;
-        line-height: 1px;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
 `;
 
-export const ParagraphContainer= styled.div`
-    display: flex;
-    width: 100%;
+export const Hello = styled.h1`
+    color: ${colors.peach};
+    font-size: 36px;
+    line-height: 1px;
+`;
 
-    #left {
-        padding-left: 40px;
-        width: 35vw;
+export const Script = styled.h2`
+    font-size: 40px;
+    padding-left: 25px;
+    line-height: 1px;
+`;
 
-    }
+export const Embody = styled.h1``;
 
-    #right {
-        width: 35vw;
-    }
+export const LeftColumn = styled.div``;
+
+export const RightColumn = styled.div`
+    padding-top: 30px;
+`;
+
+export const Paragraph = styled.p`
+    width: 60%;
+    line-height: 30px;
+    font-size: 16px;
 `;
