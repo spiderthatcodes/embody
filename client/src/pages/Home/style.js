@@ -53,11 +53,9 @@ export const WhiteText = styled.p`
 `;
 
 export const GreetingsPanel = styled.div`
-    height: 75vh;
-    padding: 5% 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10%;
+    height: 70vh;
+    padding: 0 10%;
+    display: flex;
 `;
 
 export const Hello = styled.h1`
@@ -67,21 +65,55 @@ export const Hello = styled.h1`
 `;
 
 export const Script = styled.h2`
-    font-size: 40px;
-    padding-left: 25px;
-    line-height: 1px;
+    font-size: 36px;
+    position: relative;
+    top: -25px;
+    left: 20px;
 `;
 
-export const Embody = styled.h1``;
+export const Embody = styled.h1`
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    top: 100px;
+    left: 210px;
 
-export const LeftColumn = styled.div``;
+    span {
+        background: linear-gradient(to top, ${colors.peach} 50%, transparent 50%);
+    }
+`;
+
+export const LeftColumn = styled.div`
+    position: relative;
+`;
 
 export const RightColumn = styled.div`
     padding-top: 30px;
 `;
 
 export const Paragraph = styled.p`
-    width: 60%;
+    width: 80%;
     line-height: 30px;
     font-size: 16px;
+    margin-bottom: 35px;
+`;
+
+export const LeftParagraph = styled.div`
+    width: 58%;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 35px;
+    position: relative;
+    left: 40px;
+    top: -30px;
+`;
+
+export const TopLine = styled.div`
+    width: 40%;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 35px;
+    position: relative;
+    left: 40px;
+    top: -30px;
 `;

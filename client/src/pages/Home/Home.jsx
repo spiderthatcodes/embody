@@ -14,6 +14,9 @@ import {
     Hello,
     Script,
     Paragraph,
+    Embody,
+    LeftParagraph,
+    TopLine,
 } from './style';
 
 const Home = () => {
@@ -24,11 +27,12 @@ const Home = () => {
                 <Hello>Hello!</Hello>
                 <Script>We are so pleased you are here.</Script>
                     
-                        <p>
+                        <TopLine>
                             We would like to share a little about our journey to
-                            creating Embody.
-                        </p>
-                        <Paragraph>
+                            creating
+                        </TopLine>
+                        <Embody><span>&nbsp;Embody.&nbsp;</span></Embody>
+                        <LeftParagraph>
                             We met many years ago when our sons were in
                             preschool together and became fast friends. Since
                             that time we have seen each other through a lot of
@@ -41,7 +45,7 @@ const Home = () => {
                             feeling well if given access to the right
                             environment, supportive services, tools and loving
                             guidance to facilitate it.
-                        </Paragraph>
+                        </LeftParagraph>
                     </LeftColumn>
                     <RightColumn>
                         <Paragraph>
@@ -62,6 +66,7 @@ const Home = () => {
                             looking for here with us. We are so excited to work
                             together!
                         </Paragraph>
+                        {/* needs learn more button */}
                     </RightColumn>
             </GreetingsPanel>
 
