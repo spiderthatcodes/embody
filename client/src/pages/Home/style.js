@@ -54,9 +54,32 @@ export const WhiteText = styled.p`
 
 export const GreetingsPanel = styled.div`
     height: 75vh;
+    padding: 5% 10%;
     
     h1 {
         color: ${colors.peach};
         font-size: 36px;
+        line-height: 1px;
+    }
+
+    h2 {
+        font-size: 48px;
+        padding-left: 20px;
+        line-height: 1px;
+    }
+`;
+
+export const ParagraphContainer= styled.div`
+    display: flex;
+    width: 100%;
+
+    #left {
+        padding-left: 40px;
+        width: 35vw;
+
+    }
+
+    #right {
+        width: 35vw;
     }
 `;
