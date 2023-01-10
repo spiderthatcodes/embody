@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import TICSection from '../../components/TICSection/TICSection';
 import {
@@ -17,9 +18,11 @@ import {
     Embody,
     LeftParagraph,
     TopLine,
+    LearnMore,
 } from './style';
 
 const Home = () => {
+    const navigate = useNavigate();
     return (
         <Layout>
             <GreetingsPanel>
@@ -66,7 +69,7 @@ const Home = () => {
                             looking for here with us. We are so excited to work
                             together!
                         </Paragraph>
-                        {/* needs learn more button */}
+                        <LearnMore onClick={() => navigate('/about')}>Learn More &#10148;</LearnMore>
                     </RightColumn>
             </GreetingsPanel>
 

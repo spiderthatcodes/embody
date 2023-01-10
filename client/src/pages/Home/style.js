@@ -54,8 +54,10 @@ export const WhiteText = styled.p`
 
 export const GreetingsPanel = styled.div`
     height: 70vh;
-    padding: 0 10%;
+    padding: 0 15%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export const Hello = styled.h1`
@@ -68,7 +70,7 @@ export const Script = styled.h2`
     font-size: 36px;
     position: relative;
     top: -25px;
-    left: 20px;
+    left: 2%;
 `;
 
 export const Embody = styled.h1`
@@ -76,7 +78,7 @@ export const Embody = styled.h1`
     font-weight: 400;
     position: absolute;
     top: 100px;
-    left: 210px;
+    left: 35%;
 
     span {
         background: linear-gradient(to top, ${colors.peach} 50%, transparent 50%);
@@ -92,14 +94,14 @@ export const RightColumn = styled.div`
 `;
 
 export const Paragraph = styled.p`
-    width: 80%;
+    width: 500px;
     line-height: 30px;
     font-size: 16px;
     margin-bottom: 35px;
 `;
 
 export const LeftParagraph = styled.div`
-    width: 58%;
+    width: 440px;
     line-height: 30px;
     font-size: 16px;
     margin-bottom: 35px;
@@ -109,11 +111,18 @@ export const LeftParagraph = styled.div`
 `;
 
 export const TopLine = styled.div`
-    width: 40%;
+    width: 300px;
     line-height: 30px;
     font-size: 16px;
     margin-bottom: 35px;
     position: relative;
     left: 40px;
     top: -30px;
+`;
+
+export const LearnMore = styled.button`
+    color: ${colors.peach};
+    border: none;
+    background: none;
+    font-size: 32px;
 `;
