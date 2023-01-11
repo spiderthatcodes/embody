@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { colors } from '../../theme';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    height: 10vh;
+`;
 
 export const LinkContainer = styled.div`
     position: absolute;

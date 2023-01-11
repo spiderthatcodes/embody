@@ -126,3 +126,14 @@ export const LearnMore = styled.button`
     background: none;
     font-size: 32px;
 `;
+
+export const ImagePanel = styled.div`
+    height: 120vh;
+    width: 100%;
+`;
+
+export const PeachSquare = styled.div`
+    height: 60vh;
+    width: 60%;
+    background-color: ${colors.peach};
+`;

@@ -19,12 +19,17 @@ import {
     LeftParagraph,
     TopLine,
     LearnMore,
+    ImagePanel,
+    PeachSquare,
 } from './style';
 
 const Home = () => {
     const navigate = useNavigate();
     return (
         <Layout>
+            <ImagePanel>
+                <PeachSquare />
+            </ImagePanel>
             <GreetingsPanel>
             <LeftColumn>
                 <Hello>Hello!</Hello>
