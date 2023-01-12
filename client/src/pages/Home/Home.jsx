@@ -34,7 +34,6 @@ const Home = () => {
             <LeftColumn>
                 <Hello>Hello!</Hello>
                 <Script>We are so pleased you are here.</Script>
-                    
                         <TopLine>
                             We would like to share a little about our journey to
                             creating

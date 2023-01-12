@@ -1,8 +1,10 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Container, LogoContainer, Title, LinkContainer, Subtitle } from './style';
 
 const Nav = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location.pathname);
 
     return (
         <Container>
@@ -11,6 +13,7 @@ const Nav = () => {
                 <Subtitle>Coaching & Counseling</Subtitle>
             </LogoContainer>
             <LinkContainer>
+            {/* maybe add span, add highlight class if location is equal to Link path */}
                 <Link to='/about'>About</Link>
                 <Link to='/services'>Services</Link>
                 <Link to='/blog'>Blog</Link>
