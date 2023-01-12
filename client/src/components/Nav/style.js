@@ -3,6 +3,7 @@ import { colors } from '../../theme';
 
 export const Container = styled.div`
     height: 10vh;
+
 `;
 
 export const LinkContainer = styled.div`
@@ -16,6 +17,11 @@ export const LinkContainer = styled.div`
         text-decoration: none;
         color: ${colors.black};
     }
+
+    .highlight {
+        background: linear-gradient(to top, ${colors.peach} 50%, transparent 50%);
+    }
+
 `;
 
 export const Title = styled.h1`
