@@ -10,13 +10,12 @@ import {
 const Nav = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location.pathname);
 
     return (
         <Container>
-            <LogoContainer onClick={() => navigate('/')}>
-                <Title>Embody</Title>
-                <Subtitle>Coaching & Counseling</Subtitle>
+            <LogoContainer>
+                <Title onClick={() => navigate('/')}>Embody</Title>
+                <Subtitle onClick={() => navigate('/')}>Coaching & Counseling</Subtitle>
             </LogoContainer>
             <LinkContainer>
                 <Link to='/about'>
