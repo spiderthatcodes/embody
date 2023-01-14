@@ -25,7 +25,7 @@ export const Right = styled.div`
 
 export const BlackText = styled.p`
     font-weight: 600;
-    color: ${colors.black};
+    color: ${colors.white};
     font-size: 56px;
     text-align: center;
 `;
