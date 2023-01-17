@@ -33,10 +33,11 @@ export const MethodsSection = styled.div`
 export const MessageForm = styled.form`
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
 
     textarea {
         height: 100px;
+        padding: 10px;
     }
 `;
 
@@ -49,5 +50,9 @@ export const Inputs = styled.div`
         width: 45%;
         padding: 10px;
     }
+`;
+
+export const ImagePanel = styled.div`
+    height: 40vh;
 `;
 

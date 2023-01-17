@@ -8,11 +8,13 @@ import {
     NumberedCardContainer,
     MessageForm,
     Inputs,
+    ImagePanel,
 } from './style';
 
 const Contact = () => {
     return (
         <Layout>
+          <ImagePanel></ImagePanel>
             <MethodsSection>
                 <h1>How to Get In Touch</h1>
                 <NumberedCardContainer>
