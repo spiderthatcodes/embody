@@ -18,7 +18,7 @@ export const NumberedCardContainer = styled.div`
 export const MethodsSection = styled.div`
     width: 60%;
     margin: auto;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +27,27 @@ export const MethodsSection = styled.div`
     h1 {
         font-size: 40px;
         font-weight: 400;
+    }
+`;
+
+export const MessageForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    textarea {
+        height: 100px;
+    }
+`;
+
+export const Inputs = styled.div`
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        width: 45%;
+        padding: 10px;
     }
 `;
 

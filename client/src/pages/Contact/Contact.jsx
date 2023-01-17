@@ -2,7 +2,13 @@ import React from 'react';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
 import { contacts } from '../../constants/contactMethods';
-import { LeavesPanel, MethodsSection, NumberedCardContainer } from './style';
+import {
+    LeavesPanel,
+    MethodsSection,
+    NumberedCardContainer,
+    MessageForm,
+    Inputs,
+} from './style';
 
 const Contact = () => {
     return (
@@ -19,6 +25,22 @@ const Contact = () => {
                         />
                     ))}
                 </NumberedCardContainer>
+                <MessageForm>
+                    <Inputs>
+                        <input
+                            type='text'
+                            placeholder='Full Name'
+                        />
+                        <input
+                            type='text'
+                            placeholder='Email Address'
+                        />
+                    </Inputs>
+                    <textarea
+                        name='message'
+                        placeholder='Message'
+                    ></textarea>
+                </MessageForm>
             </MethodsSection>
             <LeavesPanel />
         </Layout>
