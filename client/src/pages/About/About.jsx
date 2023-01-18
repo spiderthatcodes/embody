@@ -8,7 +8,7 @@ const About = () => {
     return (
         <Layout>
             <GreenStrip>
-                <p>Embody your highest self.</p>
+                <p>We are here to help you thrive.</p>
             </GreenStrip>
             <HelpSection>
                 <h1>We Can Help</h1>

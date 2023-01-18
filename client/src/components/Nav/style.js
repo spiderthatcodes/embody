@@ -2,14 +2,12 @@ import styled from 'styled-components';
 import { colors } from '../../theme';
 
 export const Container = styled.div`
-    height: 10vh;
-
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
 `;
 
 export const LinkContainer = styled.div`
-    position: absolute;
-    right: 80px;
-    top: 25px;
     display: flex;
     width: 300px;
     justify-content: space-between;
@@ -39,5 +37,5 @@ export const Subtitle = styled.p`
 export const LogoContainer = styled.div`
     width: 100%;
     margin: auto;
-    text-align: center;
+    text-align: left;
 `;
