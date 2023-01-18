@@ -1,25 +1,21 @@
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Logo from '../Logo/Logo';
 import {
     Container,
     EmailBar,
     LogoContainer,
-    Title,
-    Subtitle,
     LinkContainer,
     NavRow,
 } from './style';
 
 
 const Footer = () => {
-    // const location = useLocation();
-    const navigate = useNavigate();
 
     return (
         <Container>
             <NavRow>
                 <LogoContainer>
-                    <Title onClick={() => navigate('/')}>Embody</Title>
-                    <Subtitle onClick={() => navigate('/')}>Coaching & Counseling</Subtitle>
+                    <Logo />
                 </LogoContainer>
                 <LinkContainer>
                     <Link to='/about'>About</Link>

@@ -1,21 +1,18 @@
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import Logo from '../Logo/Logo';
 import {
     Container,
     LogoContainer,
-    Title,
     LinkContainer,
-    Subtitle,
 } from './style';
 
 const Nav = () => {
-    const navigate = useNavigate();
     const location = useLocation();
 
     return (
         <Container>
             <LogoContainer>
-                <Title onClick={() => navigate('/')}>Embody</Title>
-                <Subtitle onClick={() => navigate('/')}>Coaching & Counseling</Subtitle>
+                <Logo />
             </LogoContainer>
             <LinkContainer>
                 <Link to='/about'>
