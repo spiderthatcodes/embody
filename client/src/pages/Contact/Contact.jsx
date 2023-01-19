@@ -9,12 +9,20 @@ import {
     MessageForm,
     Inputs,
     ImagePanel,
+    ImageSide,
+    TextSide,
 } from './style';
 
 const Contact = () => {
     return (
         <Layout>
-            <ImagePanel></ImagePanel>
+            <ImagePanel>
+                <ImageSide />
+                <TextSide>
+                    <p>Questions?</p>
+                    <p>We're here to help.</p>
+                </TextSide>
+            </ImagePanel>
             <MethodsSection>
                 <h1>How to Get In Touch</h1>
                 <NumberedCardContainer>

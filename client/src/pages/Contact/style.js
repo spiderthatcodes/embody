@@ -18,7 +18,7 @@ export const NumberedCardContainer = styled.div`
 export const MethodsSection = styled.div`
     width: 60%;
     margin: auto;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +53,27 @@ export const Inputs = styled.div`
 `;
 
 export const ImagePanel = styled.div`
-    height: 40vh;
+    height: 70vh;
+    display: flex;
 `;
 
+export const ImageSide = styled.div`
+    width: 60%;
+    background-image: url(${leaves});
+    background-size: cover;
+    height: 100%;
+`;
+
+export const TextSide = styled.div`
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    p {
+        margin-left: 40px;
+        font-size: 56px;
+        line-height: 10px;
+    }
+`;
