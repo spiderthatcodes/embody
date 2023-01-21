@@ -35,14 +35,16 @@ const Contact = () => {
                         />
                     ))}
                 </NumberedCardContainer>
-                <MessageForm>
+                <MessageForm action='mailto:jessicaldickerson@outlook.com' method="post" enctype="text/plain">
                     <Inputs>
                         <input
                             type='text'
+                            name='name'
                             placeholder='Full Name'
                         />
                         <input
                             type='text'
+                            name='email'
                             placeholder='Email Address'
                         />
                     </Inputs>
@@ -50,6 +52,7 @@ const Contact = () => {
                         name='message'
                         placeholder='Message'
                     ></textarea>
+                    <input type="submit" value="Send" />
                 </MessageForm>
             </MethodsSection>
             <LeavesPanel />
