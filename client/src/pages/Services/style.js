@@ -17,14 +17,3 @@ export const ServicesContainer = styled.div`
     display: flex;
     justify-content: space-around;
 `;
-
-export const Service = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-        height: 40vh;
-        width: auto;
-    }
-`;
