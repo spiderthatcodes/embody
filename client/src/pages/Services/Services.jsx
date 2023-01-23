@@ -5,7 +5,6 @@ import { ServiceTypes, ServicesContainer } from './style';
 
 
 const Services = () => {
-    
 
     return (
         <Layout>
