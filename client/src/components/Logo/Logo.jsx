@@ -8,7 +8,7 @@ const Logo = () => {
         <Container>
             <Title onClick={() => navigate('/')}>Embody</Title>
             <Subtitle onClick={() => navigate('/')}>
-                Coaching & Counseling
+                Wellness Collective
             </Subtitle>
         </Container>
     );
