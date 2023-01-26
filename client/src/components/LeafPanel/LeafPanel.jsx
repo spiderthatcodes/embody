@@ -9,7 +9,7 @@ const LeafPanel = () => {
             <Right>
                 <WhiteText>Feeling stuck?</WhiteText>
                 <WhiteText>Unsure what you need?</WhiteText>
-                <BlackText>Let’s schedule a complimentary time to talk and explore what your body and mind may be craving, but you may not have the language for just yet.</BlackText>
+                <BlackText>Let&#39;s schedule a complimentary time to talk and explore what your body and mind may be craving, but you may not have the language for just yet.</BlackText>
                 <Button text='Contact Us' route='/contact' />
             </Right>
         </Container>
