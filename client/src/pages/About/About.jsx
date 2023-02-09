@@ -1,12 +1,16 @@
+import BioCard from '../../components/BioCard/BioCard';
 import Button from '../../components/Button/Button';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
 import { help } from '../../constants/aboutPageData';
+import { leaves } from '../../resources/leaves.jpg'
 import { NumberedCardContainer, HelpSection, GreenStrip } from './style';
 
 const About = () => {
     return (
         <Layout>
+            <BioCard name={Stephanie} text='test' imgSrc={leaves} />
+            <BioCard name={Stephanie} text='test' imgSrc={leaves} />
             <GreenStrip>
                 <p>We are here to help you thrive.</p>
             </GreenStrip>
