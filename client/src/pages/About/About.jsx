@@ -9,8 +9,8 @@ import { NumberedCardContainer, HelpSection, GreenStrip } from './style';
 const About = () => {
     return (
         <Layout>
-            <BioCard name={Stephanie} text='test' imgSrc={leaves} />
-            <BioCard name={Stephanie} text='test' imgSrc={leaves} />
+            <BioCard name='Stephanie' text='test' imgSrc={leaves} />
+            <BioCard name='Alyssa' text='test' imgSrc={leaves} />
             <GreenStrip>
                 <p>We are here to help you thrive.</p>
             </GreenStrip>
