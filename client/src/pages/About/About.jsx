@@ -3,7 +3,7 @@ import Button from '../../components/Button/Button';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
 import { help } from '../../constants/aboutPageData';
-import { leaves } from '../../resources/leaves.jpg'
+import leaves from '../../resources/leaves.jpg'
 import { NumberedCardContainer, HelpSection, GreenStrip } from './style';
 
 const About = () => {
