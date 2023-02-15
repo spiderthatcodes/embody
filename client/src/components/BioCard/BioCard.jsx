@@ -1,18 +1,31 @@
-import { Container, Left, Right } from './style';
+import { Container, ImageSide, TextSide } from './style';
 
-const BioCard = ({ name, text, imgSrc }) => {
+const BioCard = ({ name, text, imgSrc, imageLeft = false }) => {
+    console.log(imageLeft);
     return (
-        <Container>
-            <Left>
-                <img
-                    src={imgSrc}
-                    alt={name}
-                />
-            </Left>
-            <Right>
-                <h1>Meet {name}</h1>
+        <Container imageLeft={imageLeft}>
+            {imageLeft && (
+                <ImageSide>
+                    <img
+                        src={imgSrc}
+                        alt={name}
+                    />
+                </ImageSide>
+            )}
+            <TextSide>
+                <span>
+                    <h1>&nbsp;Meet {name}&nbsp;</h1>
+                </span>
                 <p>{text}</p>
-            </Right>
+            </TextSide>
+            {!imageLeft && (
+                <ImageSide>
+                    <img
+                        src={imgSrc}
+                        alt={name}
+                    />
+                </ImageSide>
+            )}
         </Container>
     );
 };

@@ -2,15 +2,32 @@ import BioCard from '../../components/BioCard/BioCard';
 import Button from '../../components/Button/Button';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
-import { help } from '../../constants/aboutPageData';
-import leaves from '../../resources/leaves.jpg'
-import { NumberedCardContainer, HelpSection, GreenStrip } from './style';
+import { help, ayeshaText, stephanieText } from '../../constants/aboutPageData';
+import ayesha from '../../resources/ayesha.jpg';
+import stephanie from '../../resources/stephanie.jpg';
+import {
+    NumberedCardContainer,
+    HelpSection,
+    GreenStrip,
+    BioCardContainer,
+} from './style';
 
 const About = () => {
     return (
         <Layout>
-            <BioCard name='Stephanie' text='test' imgSrc={leaves} />
-            <BioCard name='Alyssa' text='test' imgSrc={leaves} />
+            <BioCardContainer>
+                <BioCard
+                    name='Stephanie'
+                    text={stephanieText}
+                    imgSrc={stephanie}
+                    imageLeft={true}
+                />
+                <BioCard
+                    name='Ayesha'
+                    text={ayeshaText}
+                    imgSrc={ayesha}
+                />
+            </BioCardContainer>
             <GreenStrip>
                 <p>We are here to help you thrive.</p>
             </GreenStrip>
@@ -26,7 +43,10 @@ const About = () => {
                         />
                     ))}
                 </NumberedCardContainer>
-                <Button text='Learn more' route='/services' />
+                <Button
+                    text='Learn more'
+                    route='/services'
+                />
             </HelpSection>
         </Layout>
     );

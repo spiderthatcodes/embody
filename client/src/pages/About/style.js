@@ -30,8 +30,16 @@ export const GreenStrip = styled.div`
     align-items: center;
     justify-content: center;
 
-        p {
-            color: ${colors.white};
-            font-size: 36px;
-        }
+    p {
+        color: ${colors.white};
+        font-size: 36px;
+    }
+`;
+
+export const BioCardContainer = styled.div`
+    padding: 150px;
+
+    div:first-child {
+    margin-bottom: 46px;;
+}
 `;
