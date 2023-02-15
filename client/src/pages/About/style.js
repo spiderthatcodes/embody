@@ -40,6 +40,41 @@ export const BioCardContainer = styled.div`
     padding: 150px;
 
     div:first-child {
-    margin-bottom: 46px;;
-}
+        margin-bottom: 46px;
+    }
+`;
+
+export const TopImagePanel = styled.div`
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+`;
+
+export const LeftSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+
+    h1 {
+        text-align: left;
+        width: 35vw;
+        margin-bottom: 100px;
+        line-height: 64px;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    div {
+        height: 25vh;
+        width: 100%;
+        background-color: ${colors.tan}
+    }
+`;
+
+export const RightSide = styled.div`
+    img {
+        width: 45vw;
+    }
 `;

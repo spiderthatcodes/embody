@@ -5,16 +5,29 @@ import NumberedCard from '../../components/NumberedCard/NumberedCard';
 import { help, ayeshaText, stephanieText } from '../../constants/aboutPageData';
 import ayesha from '../../resources/ayesha.jpg';
 import stephanie from '../../resources/stephanie.jpg';
+import laughing from '../../resources/laughing.jpg';
 import {
     NumberedCardContainer,
     HelpSection,
     GreenStrip,
     BioCardContainer,
+    TopImagePanel,
+    LeftSide,
+    RightSide,
 } from './style';
 
 const About = () => {
     return (
         <Layout>
+            <TopImagePanel>
+                <LeftSide>
+                    <h1>We are passionate about helping you remember who you are.</h1>
+                    <div></div>
+                </LeftSide>
+                <RightSide>
+                    <img src={laughing} alt="ladies laughing" />
+                </RightSide>
+            </TopImagePanel>
             <BioCardContainer>
                 <BioCard
                     name='Stephanie'
