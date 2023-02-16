@@ -13,6 +13,7 @@ export const Title = styled.h1`
     font-size: 55px;
     line-height: 0px;
     color: ${colors.black};
+    cursor: pointer;
 `;
 
 export const Subtitle = styled.p`
@@ -22,4 +23,5 @@ export const Subtitle = styled.p`
     position: absolute;
     top: 18px;
     left: 60px;
+    cursor: pointer;
 `;
