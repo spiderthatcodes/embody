@@ -20,7 +20,8 @@ const Contact = () => {
                 <ImageSide />
                 <TextSide>
                     <p>Questions?</p>
-                    <p>We're here to help.</p>
+                    <p id='second'>We're here to help.</p>
+                    <div />
                 </TextSide>
             </ImagePanel>
             <MethodsSection>

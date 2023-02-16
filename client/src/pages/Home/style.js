@@ -3,6 +3,7 @@ import { colors } from '../../theme';
 import roses from '../../resources/roses.jpg';
 import leaves from '../../resources/leaves.jpg';
 
+
 export const RosePanel = styled.div`
     height: 75vh;
     display: grid;
@@ -128,12 +129,22 @@ export const LearnMore = styled.button`
 `;
 
 export const ImagePanel = styled.div`
-    height: 120vh;
+    height: 110vh;
     width: 100%;
+    position: relative;
+
+    img {
+        width: 90%;
+    }
+
+    div {
+        height: 25vh;
+        width: 100%;
+        background-color: ${colors.tan};
+        position: absolute;
+        bottom: 20%;
+        z-index: -1;
+    }
 `;
 
-export const PeachSquare = styled.div`
-    height: 60vh;
-    width: 60%;
-    background-color: ${colors.peach};
-`;
+

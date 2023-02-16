@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import TICSection from '../../components/TICSection/TICSection';
+import chatting from '../../resources/chatting.png';
+
 import {
     Left,
     RosePanel,
@@ -20,7 +22,6 @@ import {
     TopLine,
     LearnMore,
     ImagePanel,
-    PeachSquare,
 } from './style';
 
 const Home = () => {
@@ -28,7 +29,8 @@ const Home = () => {
     return (
         <Layout>
             <ImagePanel>
-                <PeachSquare />
+                <img src={chatting} alt="ladies chatting outside" />
+                <div />
             </ImagePanel>
             <GreetingsPanel>
             <LeftColumn>

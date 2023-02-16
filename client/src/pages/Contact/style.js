@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { colors } from '../../theme';
+import together from '../../resources/together.png';
 import leaves from '../../resources/leaves.jpg';
 
 export const LeavesPanel = styled.div`
@@ -53,13 +55,13 @@ export const Inputs = styled.div`
 `;
 
 export const ImagePanel = styled.div`
-    height: 70vh;
+    height: 80vh;
     display: flex;
 `;
 
 export const ImageSide = styled.div`
     width: 60%;
-    background-image: url(${leaves});
+    background-image: url(${together});
     background-size: cover;
     height: 100%;
 `;
@@ -70,10 +72,23 @@ export const TextSide = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
 
     p {
         margin-left: 40px;
         font-size: 56px;
         line-height: 10px;
+    }
+
+    #second {
+        margin: 15px 0 0 40px;
+    }
+
+    div {
+        height: 20vh;
+        width: 100%;
+        background-color: ${colors.tan};
+        position: absolute;
+        bottom: 45px;
     }
 `;
