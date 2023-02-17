@@ -5,5 +5,5 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-    padding: 0 40px;
+    padding: 0 0px;
 `;

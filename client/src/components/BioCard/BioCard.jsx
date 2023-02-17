@@ -1,7 +1,6 @@
 import { Container, ImageSide, TextSide } from './style';
 
 const BioCard = ({ name, text, imgSrc, imageLeft = false }) => {
-    console.log(imageLeft);
     return (
         <Container imageLeft={imageLeft}>
             {imageLeft && (

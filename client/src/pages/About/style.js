@@ -47,7 +47,6 @@ export const BioCardContainer = styled.div`
 export const TopImagePanel = styled.div`
     display: flex;
     width: 100%;
-    /* justify-content: space-between; */
 `;
 
 export const LeftSide = styled.div`
@@ -69,7 +68,7 @@ export const LeftSide = styled.div`
     div {
         height: 25vh;
         width: 100%;
-        background-color: ${colors.tan}
+        background-color: ${colors.tan};
     }
 `;
 

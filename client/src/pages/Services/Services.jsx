@@ -18,7 +18,7 @@ const Services = () => {
                 <ServicesContainer>
                     <ServiceLink src={coaching} path='/services/coaching' groupName='1:1 Coaching & Counseling' />
                     <ServiceLink src={groups} path='/services/groups' groupName='Groups' />
-                    <ServiceLink src={immersion} path='services/experiences'  groupName='Immersive Experiences' />
+                    <ServiceLink src={immersion} path='/services/experiences'  groupName='Immersive Experiences' />
                 </ServicesContainer>
             </ServiceTypes>
             <LeafPanel />
