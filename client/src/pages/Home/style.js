@@ -3,11 +3,15 @@ import { colors } from '../../theme';
 import roses from '../../resources/roses.jpg';
 import leaves from '../../resources/leaves.jpg';
 
-
 export const RosePanel = styled.div`
     height: 75vh;
     display: grid;
     grid-template-columns: 50% 50%;
+    @media (max-width: 900px) {
+        height: 30vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
 `;
 
 export const Left = styled.div`
@@ -29,6 +33,9 @@ export const BlackText = styled.p`
     color: ${colors.white};
     font-size: 56px;
     text-align: center;
+    @media (max-width: 900px) {
+        font-size: 24px;
+    }
 `;
 
 export const Leaves = styled.div`
@@ -36,6 +43,9 @@ export const Leaves = styled.div`
     background-size: cover;
     width: 100%;
     height: 50vh;
+    @media (max-width: 900px) {
+        height: 25vh;
+    }
 `;
 
 export const PeachPanel = styled.div`
@@ -44,6 +54,9 @@ export const PeachPanel = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 900px) {
+        height: 25vh;
+    }
 `;
 
 export const WhiteText = styled.p`
@@ -51,6 +64,10 @@ export const WhiteText = styled.p`
     font-size: 40px;
     text-align: center;
     width: 45%;
+    @media (max-width: 900px) {
+        font-size: 24px;
+        width: 80%;
+    }
 `;
 
 export const GreetingsPanel = styled.div`
@@ -59,6 +76,11 @@ export const GreetingsPanel = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 900px) {
+        height: auto;
+        padding: 5px;
+    }
 `;
 
 export const Hello = styled.h1`
@@ -72,6 +94,9 @@ export const Script = styled.h2`
     position: relative;
     top: -25px;
     left: 2%;
+    @media (max-width: 900px) {
+        position: static;
+    }
 `;
 
 export const Embody = styled.h1`
@@ -80,14 +105,24 @@ export const Embody = styled.h1`
     position: absolute;
     top: 100px;
     left: 35%;
+    @media (max-width: 900px) {
+        position: static;
+    }
 
     span {
-        background: linear-gradient(to top, ${colors.peach} 50%, transparent 50%);
+        background: linear-gradient(
+            to top,
+            ${colors.peach} 50%,
+            transparent 50%
+        );
     }
 `;
 
 export const LeftColumn = styled.div`
     position: relative;
+    @media (max-width: 900px) {
+        position: static;
+    }
 `;
 
 export const RightColumn = styled.div`
@@ -109,6 +144,9 @@ export const LeftParagraph = styled.div`
     position: relative;
     left: 40px;
     top: -30px;
+    @media (max-width: 900px) {
+        position: static;
+    }
 `;
 
 export const TopLine = styled.div`
@@ -119,6 +157,9 @@ export const TopLine = styled.div`
     position: relative;
     left: 40px;
     top: -30px;
+    @media (max-width: 900px) {
+        position: static;
+    }
 `;
 
 export const LearnMore = styled.button`
@@ -133,18 +174,32 @@ export const ImagePanel = styled.div`
     width: 100%;
     position: relative;
 
-    img {
-        width: 90%;
-    }
-
-    div {
-        height: 25vh;
-        width: 100%;
-        background-color: ${colors.tan};
-        position: absolute;
-        bottom: 20%;
-        z-index: -1;
+    @media (max-width: 900px) {
+        height: auto;
+        margin-bottom: 50px;
+        position: static;
     }
 `;
 
+export const Stripe = styled.div`
+    height: 25vh;
+    width: 100%;
+    background-color: ${colors.tan};
+    position: absolute;
+    bottom: 20%;
+    z-index: -1;
 
+    @media (max-width: 900px) {
+        height: 0;
+        width: 0;
+        position: static;
+    }
+`;
+
+export const Image = styled.img`
+    width: 90%;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+`;

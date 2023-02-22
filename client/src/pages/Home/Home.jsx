@@ -22,6 +22,8 @@ import {
     TopLine,
     LearnMore,
     ImagePanel,
+    Image,
+    Stripe,
 } from './style';
 
 const Home = () => {
@@ -29,8 +31,8 @@ const Home = () => {
     return (
         <Layout>
             <ImagePanel>
-                <img src={chatting} alt="ladies chatting outside" />
-                <div />
+                <Image src={chatting} alt="ladies chatting outside" />
+                <Stripe />
             </ImagePanel>
             <GreetingsPanel>
             <LeftColumn>
