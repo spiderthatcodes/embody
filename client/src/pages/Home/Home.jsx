@@ -88,7 +88,9 @@ const Home = () => {
                 </WhiteText>
             </PeachPanel>
             <Leaves />
+            
             <TICSection />
+
             <RosePanel>
                 <Left>
                     <BlackText>
