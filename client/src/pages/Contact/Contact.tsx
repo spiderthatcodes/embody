@@ -1,7 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
-import { contacts } from '../../constants/contactMethods';
+import { contacts } from '../../constants/contactInfo';
+import { NumberedCardProps } from '../../constants/aboutPage';
 import {
     LeavesPanel,
     MethodsSection,
@@ -13,7 +14,7 @@ import {
     TextSide,
 } from './style';
 
-const Contact = () => {
+const Contact: FC = () => {
     return (
         <Layout>
             <ImagePanel>
@@ -27,7 +28,7 @@ const Contact = () => {
             <MethodsSection>
                 <h1>How to Get In Touch</h1>
                 <NumberedCardContainer>
-                    {contacts.map((point, index) => (
+                    {contacts.map((point: NumberedCardProps, index: number) => (
                         <NumberedCard
                             key={index}
                             number={point.number}
@@ -36,7 +37,11 @@ const Contact = () => {
                         />
                     ))}
                 </NumberedCardContainer>
-                <MessageForm action='mailto:jessicaldickerson@outlook.com' method="post" enctype="text/plain">
+                <MessageForm
+                    action='mailto:jessicaldickerson@outlook.com'
+                    method='post'
+                    encType='text/plain'
+                >
                     <Inputs>
                         <input
                             type='text'
@@ -53,7 +58,10 @@ const Contact = () => {
                         name='message'
                         placeholder='Message'
                     ></textarea>
-                    <input type="submit" value="Send" />
+                    <input
+                        type='submit'
+                        value='Send'
+                    />
                 </MessageForm>
             </MethodsSection>
             <LeavesPanel />

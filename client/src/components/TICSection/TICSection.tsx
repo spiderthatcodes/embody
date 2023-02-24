@@ -1,14 +1,23 @@
+import { FC } from 'react';
 import { TIC } from '../../constants/TICpoints';
 import NumberedCard from '../NumberedCard/NumberedCard';
-import Button from '../Button/Button'
-import { NumberedCardContainer, SectionHeading, ButtonContainer, Container } from './style';
+import Button from '../Button/Button';
+import { NumberedCardProps } from '../../constants/aboutPage';
+import {
+    NumberedCardContainer,
+    SectionHeading,
+    ButtonContainer,
+    Container,
+} from './style';
 
-const TICSection = () => {
+const TICSection: FC = () => {
     return (
         <Container>
-            <SectionHeading>Trauma informed coaching and counseling</SectionHeading>
+            <SectionHeading>
+                Trauma informed coaching and counseling
+            </SectionHeading>
             <NumberedCardContainer>
-                {TIC.map((point, index) => (
+                {TIC.map((point: NumberedCardProps, index: number) => (
                     <NumberedCard
                         key={index}
                         number={point.number}
@@ -18,7 +27,10 @@ const TICSection = () => {
                 ))}
             </NumberedCardContainer>
             <ButtonContainer>
-                <Button text='Learn More' route='/contact' />
+                <Button
+                    text='Learn More'
+                    route='/contact'
+                />
             </ButtonContainer>
         </Container>
     );

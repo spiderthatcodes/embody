@@ -1,8 +1,17 @@
+import { FC } from 'react';
 import { Container, ImageSide, TextSide } from './style';
 
-const BioCard = ({ name, text, imgSrc, imageLeft = false }) => {
+interface BioCardProps {
+    name: string;
+    text: string;
+    imgSrc: string;
+    imageLeft?: boolean;
+}
+
+
+const BioCard: FC<BioCardProps> = ({ name, text, imgSrc, imageLeft = false }) => {
     return (
-        <Container imageLeft={imageLeft}>
+        <Container>
             {imageLeft && (
                 <ImageSide>
                     <img

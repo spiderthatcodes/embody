@@ -12,7 +12,7 @@ export const ImageSide = styled.div`
     img {
         height: 60vh;
     }
-`
+`;
 
 export const TextSide = styled.div`
     display: flex;
@@ -30,6 +30,10 @@ export const TextSide = styled.div`
     }
 
     span {
-        background: linear-gradient(to top, ${colors.peach} 50%, transparent 50%);
+        background: linear-gradient(
+            to top,
+            ${colors.peach} 50%,
+            transparent 50%
+        );
     }
-`
+`;

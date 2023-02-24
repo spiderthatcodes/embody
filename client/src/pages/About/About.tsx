@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import BioCard from '../../components/BioCard/BioCard';
 import Button from '../../components/Button/Button';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
-import { help, ayeshaText, stephanieText } from '../../constants/aboutPageData';
+import { help, ayeshaText, stephanieText, NumberedCardProps } from '../../constants/aboutPage';
 import ayesha from '../../resources/ayesha.jpg';
 import stephanie from '../../resources/stephanie.jpg';
 import laughing from '../../resources/laughing.jpg';
@@ -16,7 +17,7 @@ import {
     RightSide,
 } from './style';
 
-const About = () => {
+const About: FC = () => {
     return (
         <Layout>
             <TopImagePanel>
@@ -47,7 +48,7 @@ const About = () => {
             <HelpSection>
                 <h1>We Can Help</h1>
                 <NumberedCardContainer>
-                    {help.map((point, index) => (
+                    {help.map((point: NumberedCardProps, index: number) => (
                         <NumberedCard
                             key={index}
                             number={point.number}

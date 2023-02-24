@@ -2,20 +2,7 @@ import coaching from '../resources/coaching.png';
 import groups from '../resources/groups.png';
 import immersion from '../resources/immersion.png';
 
-interface CardProps {
-    title: string,
-    description: string,
-    stripe: string,
-    src: string
-};
-
-interface ServiceInfo {
-    coaching: CardProps,
-    groups: CardProps,
-    experiences: CardProps
-};
-
-const services: ServiceInfo = {
+const services: any = {
     coaching: {
         title: '1:1 Coaching',
         description:

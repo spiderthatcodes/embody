@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import {
@@ -8,9 +9,7 @@ import {
     NavRow,
 } from './style';
 
-
-const Footer = () => {
-
+const Footer: FC = () => {
     return (
         <Container>
             <NavRow>

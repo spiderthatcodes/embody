@@ -1,8 +1,8 @@
+import { FC } from "react";
+import Button from '../Button/Button';
 import { BlackText, Container, Left, Right, WhiteText } from './style';
 
-import Button from '../Button/Button';
-
-const LeafPanel = () => {
+const LeafPanel: FC = () => {
     return (
         <Container>
             <Left />

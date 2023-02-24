@@ -1,6 +1,8 @@
+import { FC } from 'react';
+import { NumberedCardProps } from '../../constants/aboutPage';
 import { CardContainer } from './style';
 
-const NumberedCard = ({ number, heading, text }) => {
+const NumberedCard: FC<NumberedCardProps> = ({ number, heading, text }) => {
     return (
         <CardContainer>
             <h1>{number}</h1>

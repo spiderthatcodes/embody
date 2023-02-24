@@ -1,3 +1,4 @@
+import { FC, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import LeafPanel from '../../components/LeafPanel/LeafPanel';
@@ -5,17 +6,24 @@ import services from '../../constants/serviceInfo';
 import Button from '../../components/Button/Button';
 import { ServicePanel, ImageSide, Container } from './style';
 
-const ServiceInfo = () => {
+const ServiceInfo: FC = () => {
     const { name } = useParams();
+    const [serviceName, setServiceName] = useState<string>('')
+
+    useEffect(() => {
+        if (name) {
+            setServiceName(name)
+        }
+    }, [name, serviceName])
 
     return (
         <Layout>
             <Container>
                 <div id='stripe'>
-                    <p id='text'>{services[name].stripe}</p>
+                    <p id='text'>{services[serviceName].stripe}</p>
                 </div>
-                <h1 id='title'><span>&nbsp;{services[name].title}&nbsp;</span></h1>
-                        <p id='description'>{services[name].description}</p>
+                <h1 id='title'><span>&nbsp;{services[serviceName].title}&nbsp;</span></h1>
+                        <p id='description'>{services[serviceName].description}</p>
                         {name === 'coaching' && (
                             <p id='bullets'>
                                 <strong>
@@ -35,8 +43,8 @@ const ServiceInfo = () => {
                 <ServicePanel>
                     <ImageSide>
                         <img
-                            src={services[name].src}
-                            alt={services[name].title}
+                            src={services[serviceName].src}
+                            alt={services[serviceName].title}
                         />
                     </ImageSide>
                 </ServicePanel>
@@ -47,5 +55,3 @@ const ServiceInfo = () => {
 };
 
 export default ServiceInfo;
-
-// &#149;

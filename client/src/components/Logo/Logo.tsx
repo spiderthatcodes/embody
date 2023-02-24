@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Title, Subtitle } from './style';
 
-const Logo = () => {
-    const navigate = useNavigate();
+const Logo: FC = () => {
+    const navigate: any = useNavigate();
 
     return (
         <Container>

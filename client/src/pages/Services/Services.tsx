@@ -1,3 +1,4 @@
+import { FC } from "react";
 import ServiceLink from '../../components/ServiceLink/ServiceLink';
 import Layout from '../../components/Layout/Layout';
 import LeafPanel from '../../components/LeafPanel/LeafPanel';
@@ -7,7 +8,7 @@ import immersion from '../../resources/immersion.png';
 import { ServiceTypes, ServicesContainer, TitleContainer } from './style';
 
 
-const Services = () => {
+const Services: FC = () => {
 
     return (
         <Layout>

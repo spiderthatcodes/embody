@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import TICSection from '../../components/TICSection/TICSection';
@@ -26,7 +27,7 @@ import {
     Stripe,
 } from './style';
 
-const Home = () => {
+const Home: FC = () => {
     const navigate = useNavigate();
     return (
         <Layout>

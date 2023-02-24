@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import {
@@ -6,8 +7,8 @@ import {
     LinkContainer,
 } from './style';
 
-const Nav = () => {
-    const location = useLocation();
+const Nav: FC = () => {
+    const location: any = useLocation();
 
     return (
         <Container>
