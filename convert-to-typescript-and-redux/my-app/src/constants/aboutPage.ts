@@ -1,8 +1,10 @@
-export const help: {
+export interface NumberedCardProps {
     number: string,
     heading: string,
     text: string
-}[] = [
+}
+
+export const help: NumberedCardProps[] = [
     {
         number: '01.',
         heading: 'Bring your desires to life',
