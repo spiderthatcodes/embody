@@ -4,7 +4,7 @@ import { RootState } from '../../app/store';
 import Layout from '../../components/Layout/Layout';
 
 const Blog: FC = () => {
-    const blogs = useSelector((store: RootState) => store.blogs.blogs);
+    const blogs = useSelector((store: RootState) => store.blogs?.blogs);
     console.log(blogs)
 
     return (
