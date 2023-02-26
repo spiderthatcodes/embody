@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/blogs/';
+const API_URL = 'http://localhost:5000/api/blogs/';
 
 // Create new blog
 const createBlog = async (blogData: any, token: string) => {
@@ -21,12 +21,7 @@ const createBlog = async (blogData: any, token: string) => {
 
 // Get blogs
 const getBlogs = async () => {
-    //   const config = {
-    //     headers: {
-    //       Authorization: `Bearer ${token}`,
-    //     },
-    //   }
-
+    
     const response = await axios.get(API_URL);
 
     return response.data;
