@@ -65,6 +65,13 @@ export const LeftSide = styled.div`
         font-size: 40px;
     }
 
+    .greenStuff {
+        font-weight: 700;
+        font-size: 44px;
+        display: inline-block;
+        border-bottom: 6px solid ${colors.mint};
+    }
+
     div {
         height: 25vh;
         width: 100%;

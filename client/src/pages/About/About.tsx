@@ -23,7 +23,7 @@ const About: FC = () => {
         <Layout>
             <TopImagePanel>
                 <LeftSide>
-                    <h1>We are passionate about helping you remember who you are.</h1>
+                    <h1>We are passionate about helping you remember <span className='greenStuff'>who you are.</span></h1>
                     <div></div>
                 </LeftSide>
                 <RightSide>
