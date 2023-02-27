@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import blogService from './blogService';
 import { RootState } from '../../app/store';
+import { BlogType } from '../../types';
 
 const initialState = {
     blogs: [],
@@ -10,14 +11,7 @@ const initialState = {
     message: '',
 };
 
-interface Blog {
-    _id: string;
-    title: string;
-    text: string;
-    imageUrl?: string;
-}
-
-export const createBlog = createAsyncThunk<Blog, string, {state: RootState}>(
+export const createBlog = createAsyncThunk<BlogType, string, {state: RootState}>(
     'blogs/create',
     async (blogData, thunkAPI) => {
         try {
@@ -53,7 +47,7 @@ export const getBlogs = createAsyncThunk(
 );
 
 // Delete user blog
-export const deleteBlog = createAsyncThunk<Blog, string, { state: RootState}>(
+export const deleteBlog = createAsyncThunk<BlogType, string, { state: RootState}>(
     'blogs/delete',
     async (blogId, thunkAPI) => {
         try {
@@ -112,7 +106,7 @@ export const blogSlice = createSlice({
                 state.isLoading = false;
                 state.isSuccess = true;
                 state.blogs = state.blogs.filter(
-                    (blog: Blog) => blog._id !== action.payload._id
+                    (blog: BlogType) => blog._id !== action.payload._id
                 );
             })
             .addCase(deleteBlog.rejected, (state: any, action) => {

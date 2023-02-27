@@ -1,4 +1,4 @@
-import { NumberedCardProps } from "./aboutPage";
+import { NumberedCardProps } from "../types";
 
 export const contacts: NumberedCardProps[] = [
     {

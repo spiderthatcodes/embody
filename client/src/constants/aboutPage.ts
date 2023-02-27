@@ -1,8 +1,4 @@
-export interface NumberedCardProps {
-    number: string,
-    heading: string,
-    text: string
-}
+import { NumberedCardProps } from "../types";
 
 export const help: NumberedCardProps[] = [
     {

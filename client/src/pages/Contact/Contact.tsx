@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
 import { contacts } from '../../constants/contactInfo';
-import { NumberedCardProps } from '../../constants/aboutPage';
+import { NumberedCardProps } from '../../types';
 import {
     LeavesPanel,
     MethodsSection,

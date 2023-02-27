@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { NumberedCardProps } from '../../constants/aboutPage';
+import { NumberedCardProps } from '../../types';
 import { CardContainer } from './style';
 
 const NumberedCard: FC<NumberedCardProps> = ({ number, heading, text }) => {

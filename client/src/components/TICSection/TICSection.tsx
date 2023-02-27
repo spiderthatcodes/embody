@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { TIC } from '../../constants/TICpoints';
 import NumberedCard from '../NumberedCard/NumberedCard';
 import Button from '../Button/Button';
-import { NumberedCardProps } from '../../constants/aboutPage';
+import { NumberedCardProps } from '../../types';
 import {
     NumberedCardContainer,
     SectionHeading,
