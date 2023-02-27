@@ -6,6 +6,7 @@ import Blog from './pages/Blog/Blog';
 import Services from './pages/Services/Services';
 import ServiceInfo from './pages/ServiceInfo/ServiceInfo';
 import Contact from './pages/Contact/Contact';
+import Login from './pages/Login/Login';
 
 const App: FC = () => {
     return (
@@ -34,6 +35,10 @@ const App: FC = () => {
                 <Route
                     path='/contact'
                     element={<Contact />}
+                />
+                <Route
+                    path='/login'
+                    element={<Login />}
                 />
             </Routes>
         </Router>
