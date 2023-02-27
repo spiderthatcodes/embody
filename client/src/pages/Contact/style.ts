@@ -84,6 +84,24 @@ export const TextSide = styled.div`
         margin: 15px 0 0 40px;
     }
 
+    h1 {
+        margin-left: 40px;
+        text-align: left;
+        width: 35vw;
+        margin-bottom: 100px;
+        line-height: 48px;
+        font-weight: 400;
+        font-size: 44px;
+    }
+
+    .greenStuff {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 60px;
+        display: inline-block;
+        border-bottom: 6px solid ${colors.mint};
+    }
+
     div {
         height: 20vh;
         width: 100%;

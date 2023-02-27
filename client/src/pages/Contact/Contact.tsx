@@ -21,7 +21,7 @@ const Contact: FC = () => {
                 <ImageSide />
                 <TextSide>
                     <p>Questions?</p>
-                    <p id='second'>We're here to help.</p>
+                    <h1 id='second'>We're <span className='greenStuff'>here to help.</span></h1>
                     <div />
                 </TextSide>
             </ImagePanel>
