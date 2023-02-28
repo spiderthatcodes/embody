@@ -1,9 +1,27 @@
-import { FC } from 'react'
+import { FC, useState } from 'react';
+import Layout from '../../components/Layout/Layout';
 
 const Login: FC = () => {
-  return (
-    <div>Login</div>
-  )
-}
+    const [email, setEmail] = useState<string>('');
+    const [password, setPassword] = useState<string>('');
 
-export default Login
+    const handleLogin = () => {
+        const loginData = {
+            email: email,
+            password: password
+        }
+        console.log(loginData);
+    }
+
+    return (
+        <Layout>
+            <p>Email</p>
+            <input value={email} type="text" onChange={(e) => setEmail(e.target.value)} required />
+            <p>Password</p>
+            <input value={password} type="password" onChange={(e) => setPassword(e.target.value)} required />
+            <button onClick={() => handleLogin}>Login</button>
+        </Layout>
+    );
+};
+
+export default Login;
