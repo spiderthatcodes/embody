@@ -6,13 +6,18 @@ export interface BlogType {
 }
 
 export interface UserType {
-    _id: string,
-    name: string,
-    email: string
+    _id: string;
+    name: string;
+    email: string;
 }
 
 export interface NumberedCardProps {
-    number: string,
-    heading: string,
-    text: string
+    number: string;
+    heading: string;
+    text: string;
+}
+
+export interface LoginDataType {
+    email: string;
+    password: string;
 }
