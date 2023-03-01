@@ -3,7 +3,7 @@ import { colors } from '../../theme';
 
 export const Container = styled.div`
     display: flex;
-    padding: 20px 40px;
+    padding: 20px 20px 20px 0;
     align-items: center;
 `;
 
