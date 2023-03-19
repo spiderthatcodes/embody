@@ -14,7 +14,7 @@ const TICSection: FC = () => {
     return (
         <Container>
             <SectionHeading>
-                Trauma informed coaching and counseling
+                Trauma Informed Coaching
             </SectionHeading>
             <NumberedCardContainer>
                 {TIC.map((point: NumberedCardProps, index: number) => (

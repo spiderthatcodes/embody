@@ -18,7 +18,7 @@ const Footer: FC = () => {
                 </LogoContainer>
                 <LinkContainer>
                     <Link to='/about'>About</Link>
-                    <Link to='/services'>Services</Link>
+                    <Link to='/services'>Offerings</Link>
                     <Link to='/blog'>Blog</Link>
                     <Link to='/contact'>Contact</Link>
                 </LinkContainer>

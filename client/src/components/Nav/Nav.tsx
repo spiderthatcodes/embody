@@ -31,7 +31,7 @@ const Nav: FC = () => {
                             location.pathname.includes('/services') ? 'highlight' : ''
                         }
                     >
-                        &nbsp;Services&nbsp;
+                        &nbsp;Offerings&nbsp;
                     </span>
                 </Link>
                 <Link to='/blog'>

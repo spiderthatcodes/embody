@@ -3,9 +3,8 @@ import BioCard from '../../components/BioCard/BioCard';
 import Button from '../../components/Button/Button';
 import Layout from '../../components/Layout/Layout';
 import NumberedCard from '../../components/NumberedCard/NumberedCard';
-import { help, ayeshaText, stephanieText } from '../../constants/aboutPage';
+import { help, stephanieText } from '../../constants/aboutPage';
 import { NumberedCardProps } from '../../types';
-import ayesha from '../../resources/ayesha.jpg';
 import stephanie from '../../resources/stephanie.jpg';
 import laughing from '../../resources/laughing.jpg';
 import {
@@ -36,11 +35,6 @@ const About: FC = () => {
                     text={stephanieText}
                     imgSrc={stephanie}
                     imageLeft={true}
-                />
-                <BioCard
-                    name='Ayesha'
-                    text={ayeshaText}
-                    imgSrc={ayesha}
                 />
             </BioCardContainer>
             <GreenStrip>

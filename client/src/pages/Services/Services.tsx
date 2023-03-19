@@ -17,9 +17,9 @@ const Services: FC = () => {
                     <h1>What We Offer</h1>
                 </TitleContainer>
                 <ServicesContainer>
-                    <ServiceLink src={coaching} path='/services/coaching' groupName='1:1 Coaching & Counseling' />
+                    <ServiceLink src={coaching} path='/services/coaching' groupName='1:1 Coaching' />
                     <ServiceLink src={groups} path='/services/groups' groupName='Groups' />
-                    <ServiceLink src={immersion} path='/services/experiences'  groupName='Immersive Experiences' />
+                    <ServiceLink src={immersion} path='/services/experiences'  groupName='Free Resources' />
                 </ServicesContainer>
             </ServiceTypes>
             <LeafPanel />
