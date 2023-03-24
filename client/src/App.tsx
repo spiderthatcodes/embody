@@ -21,11 +21,11 @@ const App: FC = () => {
                     element={<About />}
                 />
                 <Route
-                    path='/services'
+                    path='/offerings'
                     element={<Services />}
                 />
                 <Route
-                    path='/services/:name'
+                    path='/offerings/:name'
                     element={<ServiceInfo />}
                 />
                 <Route

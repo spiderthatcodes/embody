@@ -28,7 +28,7 @@ const Nav: FC = () => {
                 <Link to='/services'>
                     <span
                         className={
-                            location.pathname.includes('/services') ? 'highlight' : ''
+                            location.pathname.includes('/offerings') ? 'highlight' : ''
                         }
                     >
                         &nbsp;Offerings&nbsp;
