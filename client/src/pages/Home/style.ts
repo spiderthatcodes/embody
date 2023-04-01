@@ -8,9 +8,8 @@ export const RosePanel = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
     @media (max-width: 900px) {
-        height: 30vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        height: 20vh;
+        display: block;
     }
 `;
 
@@ -21,6 +20,10 @@ export const Left = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 40px;
+    @media (max-width: 900px) {
+        background-color: ${colors.mint};
+        padding: 20px;
+    }
 `;
 
 export const Right = styled.div`
@@ -179,6 +182,9 @@ export const LearnMore = styled.button`
     border: none;
     background: none;
     font-size: 32px;
+    @media (max-width: 900px) {
+        padding: 40px 0 40px 5px;
+    }
 `;
 
 export const ImagePanel = styled.div`
@@ -187,8 +193,8 @@ export const ImagePanel = styled.div`
     position: relative;
 
     @media (max-width: 900px) {
-        height: auto;
-        margin-bottom: 50px;
+        height: 20vh;
+        margin-bottom: 40px;
         position: static;
     }
 `;
@@ -202,9 +208,9 @@ export const Stripe = styled.div`
     z-index: -1;
 
     @media (max-width: 900px) {
-        height: 0;
-        width: 0;
-        position: static;
+        height: 10vh;
+        width: 100%;
+        top: 20%;
     }
 `;
 
@@ -212,6 +218,6 @@ export const Image = styled.img`
     width: 90%;
 
     @media (max-width: 900px) {
-        width: 100%;
+        width: 90%;
     }
 `;

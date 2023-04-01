@@ -26,10 +26,10 @@ const Footer: FC = () => {
                     </LinkContainer>
                 )}
             </NavRow>
-            <EmailBar>
+            {windowSize.current[0] > 900 &&<EmailBar>
                 <p>Personalized coaching & counseling</p>
                 <p>embody@gmail.com</p>
-            </EmailBar>
+            </EmailBar>}
         </Container>
     );
 };
