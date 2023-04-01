@@ -7,10 +7,11 @@ const Logo: FC = () => {
 
     return (
         <Container>
-            <Title onClick={() => navigate('/')}>Embody</Title>
+            <Title onClick={() => navigate('/')}>Stephanie Morales</Title>
             <Subtitle onClick={() => navigate('/')}>
-                Wellness Collective
+                Coaching & Counseling
             </Subtitle>
+            
         </Container>
     );
 };

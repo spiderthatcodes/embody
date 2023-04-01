@@ -5,6 +5,9 @@ export const Container = styled.div`
     display: flex;
     padding: 20px 20px 20px 0;
     align-items: center;
+    @media (max-width: 900px) {
+        padding: 10px 0 10px 0;
+    }
 `;
 
 export const LinkContainer = styled.div`
@@ -17,13 +20,54 @@ export const LinkContainer = styled.div`
     }
 
     .highlight {
-        background: linear-gradient(to top, ${colors.peach} 50%, transparent 50%);
+        background: linear-gradient(
+            to top,
+            ${colors.peach} 50%,
+            transparent 50%
+        );
     }
-
 `;
 
 export const LogoContainer = styled.div`
     width: 100%;
     margin: auto;
     text-align: left;
+`;
+
+export const Dropdown = styled.div`
+    position: relative;
+    display: inline-block;
+
+    .open {
+        display: block;
+    }
+`;
+
+export const DropdownContent = styled.div`
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    .open {
+        display: block;
+    }
+
+    a {
+        color: black;
+        padding: 6px 8px;
+        text-decoration: none;
+        display: block;
+    }
+`;
+
+export const DropButton = styled.button`
+    background-color: white;
+    color: ${colors.black};
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 `;
