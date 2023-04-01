@@ -72,14 +72,16 @@ export const WhiteText = styled.p`
 
 export const GreetingsPanel = styled.div`
     height: 70vh;
-    padding: 0 15%;
+    padding: 0 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     @media (max-width: 900px) {
         height: auto;
-        padding: 5px;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
     }
 `;
 
@@ -122,11 +124,15 @@ export const LeftColumn = styled.div`
     position: relative;
     @media (max-width: 900px) {
         position: static;
+        padding: 10px;
     }
 `;
 
 export const RightColumn = styled.div`
     padding-top: 30px;
+    @media (max-width: 900px) {
+        padding: 10px;
+    }
 `;
 
 export const Paragraph = styled.p`
@@ -134,6 +140,10 @@ export const Paragraph = styled.p`
     line-height: 30px;
     font-size: 16px;
     margin-bottom: 35px;
+    @media (max-width: 900px) {
+        width: auto;
+        margin-bottom: 0;
+    }
 `;
 
 export const LeftParagraph = styled.div`
@@ -146,6 +156,8 @@ export const LeftParagraph = styled.div`
     top: -30px;
     @media (max-width: 900px) {
         position: static;
+        width: auto;
+        margin-bottom: 0;
     }
 `;
 

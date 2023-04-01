@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import TICSection from '../../components/TICSection/TICSection';
 import chatting from '../../resources/chatting.png';
-
 import {
     Left,
     RosePanel,
@@ -38,12 +37,12 @@ const Home: FC = () => {
             <GreetingsPanel>
             <LeftColumn>
                 <Hello>Hello!</Hello>
-                <Script>We are so pleased you are here.</Script>
-                        <TopLine>
+                <Script>I am so pleased you are here.</Script>
+                        {/* <TopLine>
                             We would like to share a little about our journey to
                             creating
                         </TopLine>
-                        <Embody><span>&nbsp;Embody.&nbsp;</span></Embody>
+                        <Embody><span>&nbsp;Embody.&nbsp;</span></Embody> */}
                         <LeftParagraph>
                             We met many years ago when our sons were in
                             preschool together and became fast friends. Since
@@ -85,7 +84,7 @@ const Home: FC = () => {
             <PeachPanel>
                 <WhiteText>
                     Find the community, connection and creative care you are
-                    looking for here with us.
+                    looking for here with me.
                 </WhiteText>
             </PeachPanel>
             <Leaves />
