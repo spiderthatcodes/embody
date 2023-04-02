@@ -6,6 +6,10 @@ export const NumberedCardContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     margin: 16px 0;
+    @media (max-width: 900px) {
+        height: auto;
+        display: block;
+    }
 `;
 
 export const HelpSection = styled.div`
@@ -21,6 +25,10 @@ export const HelpSection = styled.div`
         font-size: 40px;
         font-weight: 400;
     }
+
+    @media (max-width: 900px) {
+        height: 120vh;
+    }
 `;
 
 export const GreenStrip = styled.div`
@@ -33,6 +41,13 @@ export const GreenStrip = styled.div`
     p {
         color: ${colors.white};
         font-size: 36px;
+    }
+
+    @media (max-width: 900px) {
+        height: 20vh;
+        p {
+        font-size: 24px;
+    }
     }
 `;
 
