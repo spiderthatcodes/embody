@@ -1,4 +1,4 @@
-import { FC, useRef, useState } from 'react';
+import { FC, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import {
@@ -10,17 +10,16 @@ import {
     Dropdown,
 } from './style';
 
-const Nav: FC = () => {
+const Nav: FC<{ isMobile?: boolean }> = ({ isMobile }) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const location: any = useLocation();
-    const windowSize = useRef([window.innerWidth]);
 
     return (
-        <Container>
+        <Container isMobile={isMobile} >
             <LogoContainer>
                 <Logo />
             </LogoContainer>
-            {windowSize.current[0] > 900 ? (
+            {!isMobile ? (
                 <LinkContainer>
                     <Link to='/about'>
                         <span

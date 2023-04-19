@@ -1,11 +1,18 @@
-import React, { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import { Container, Content } from './style';
 
-const Layout: FC<{ children: ReactNode }> = ({ children }) => (
+type LayoutType = {
+    children: ReactNode,
+    isMobile?: boolean
+}
+
+const Layout: FC<LayoutType> = ({ children, isMobile }) => (
+   
+    
     <Container>
-        <Nav />
+        <Nav isMobile={isMobile} />
         <Content>{children}</Content>
         <Footer />
     </Container>

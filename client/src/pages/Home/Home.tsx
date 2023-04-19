@@ -1,5 +1,7 @@
 import { FC, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../app/store';
 import Layout from '../../components/Layout/Layout';
 import TICSection from '../../components/TICSection/TICSection';
 import chatting from '../../resources/chatting.png';
@@ -26,11 +28,16 @@ import {
     Stripe,
 } from './style';
 
+
 const Home: FC = () => {
     const navigate = useNavigate();
     const windowSize = useRef([window.innerWidth]);
+    const isMobile = useSelector((store: RootState) => store?.isMobile?.isMobile);
+
+    console.log(isMobile)
+
     return (
-        <Layout>
+        <Layout isMobile={isMobile}>
             <ImagePanel>
                 <Image
                     src={chatting}

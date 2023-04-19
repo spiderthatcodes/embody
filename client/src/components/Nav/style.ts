@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 import { colors } from '../../theme';
 
-export const Container = styled.div`
+export const Container = styled.div<{ isMobile?: boolean }>`
     display: flex;
-    padding: 20px 20px 20px 0;
     align-items: center;
-    @media (max-width: 900px) {
-        padding: 10px 0 10px 0;
-    }
+    ${({ isMobile }) => isMobile && 'height: 10vh;'}
+    padding: ${({ isMobile }) => (isMobile ? '10px 0 10px 0' : '20px 20px 20px 0')}
 `;
 
 export const LinkContainer = styled.div`
