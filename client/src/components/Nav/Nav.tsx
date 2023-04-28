@@ -17,7 +17,7 @@ const Nav: FC<{ isMobile?: boolean }> = ({ isMobile }) => {
     return (
         <Container isMobile={isMobile} >
             <LogoContainer>
-                <Logo />
+                <Logo isMobile={isMobile} />
             </LogoContainer>
             {!isMobile ? (
                 <LinkContainer>

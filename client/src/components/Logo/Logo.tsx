@@ -2,16 +2,15 @@ import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Title, Subtitle } from './style';
 
-const Logo: FC = () => {
+const Logo: FC<{ isMobile?: boolean }> = ({ isMobile }) => {
     const navigate: any = useNavigate();
 
     return (
-        <Container>
+        <Container isMobile={isMobile}>
             <Title onClick={() => navigate('/')}>Stephanie Morales</Title>
             <Subtitle onClick={() => navigate('/')}>
                 Coaching & Counseling
             </Subtitle>
-            
         </Container>
     );
 };

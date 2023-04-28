@@ -1,16 +1,12 @@
 import styled from 'styled-components';
 import { colors } from '../../theme';
 
-export const Container = styled.div`
+export const Container = styled.div<{ isMobile?: boolean }>`
     background-color: ${colors.peach};
-    width: 380px;
+    width: ${({ isMobile }) => (isMobile ? '100%' : '380px')};
     height: 40px;
     text-align: center;
     position: relative;
-    @media (max-width: 900px) {
-        width: 240px;
-        height: 30px;
-    }
 `;
 
 export const Title = styled.h1`
@@ -18,9 +14,6 @@ export const Title = styled.h1`
     line-height: 0px;
     color: ${colors.black};
     cursor: pointer;
-    @media (max-width: 900px) {
-        font-size: 24px;
-    }
 `;
 
 export const Subtitle = styled.p`
@@ -31,9 +24,4 @@ export const Subtitle = styled.p`
     top: 10px;
     left: 100px;
     cursor: pointer;
-    @media (max-width: 900px) {
-        font-size: 12px;
-        top: 7px;
-        left: 60px;
-    }
 `;
