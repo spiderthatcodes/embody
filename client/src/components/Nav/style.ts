@@ -26,7 +26,7 @@ export const LinkContainer = styled.div`
     }
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.div<{ isMobile?: boolean }>`
     width: 100%;
     margin: auto;
     text-align: left;
@@ -62,8 +62,11 @@ export const DropdownContent = styled.div`
 `;
 
 export const DropButton = styled.button`
-    background-color: white;
-    color: ${colors.black};
+    position: absolute;
+    top: -16px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: ${colors.white};
     padding: 16px;
     font-size: 16px;
     border: none;

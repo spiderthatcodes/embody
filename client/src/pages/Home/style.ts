@@ -99,6 +99,7 @@ export const Script = styled.h2`
     position: relative;
     top: -25px;
     left: 2%;
+    font-family: 'Tangerine', cursive;
     @media (max-width: 900px) {
         position: static;
     }
