@@ -16,10 +16,14 @@ import {
     LeftSide,
     RightSide,
 } from './style';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../app/store';
 
 const About: FC = () => {
+    const isMobile = useSelector((store: RootState) => store?.isMobile?.isMobile);
+
     return (
-        <Layout>
+        <Layout isMobile={isMobile} >
             <TopImagePanel>
                 <LeftSide>
                     <h1>We are passionate about helping you remember <span className='greenStuff'>who you are.</span></h1>

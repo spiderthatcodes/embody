@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../app/store';
@@ -31,10 +31,7 @@ import {
 
 const Home: FC = () => {
     const navigate = useNavigate();
-    const windowSize = useRef([window.innerWidth]);
     const isMobile = useSelector((store: RootState) => store?.isMobile?.isMobile);
-
-    console.log(isMobile)
 
     return (
         <Layout isMobile={isMobile}>
@@ -98,7 +95,7 @@ const Home: FC = () => {
                     looking for here with me.
                 </WhiteText>
             </PeachPanel>
-            {windowSize.current[0] > 900 && <Leaves />}
+            {!isMobile && <Leaves />}
 
             <TICSection />
 
@@ -108,7 +105,7 @@ const Home: FC = () => {
                         Create a life that feels peaceful and authentic.
                     </BlackText>
                 </Left>
-                {windowSize.current[0] > 900 && <Right />}
+                {!isMobile && <Right />}
             </RosePanel>
         </Layout>
     );
