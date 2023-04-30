@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../app/store';
@@ -26,12 +26,15 @@ import {
     ImagePanel,
     Image,
     Stripe,
+    ReadMoreButton,
 } from './style';
+import { set } from 'mongoose';
 
 
 const Home: FC = () => {
+    const [showIntro, setShowIntro] = useState<boolean>(false)
     const navigate = useNavigate();
-    const isMobile = useSelector((store: RootState) => store?.isMobile?.isMobile);
+    const isMobile: boolean = useSelector((store: RootState) => store?.isMobile?.isMobile);
 
     return (
         <Layout isMobile={isMobile}>
@@ -46,6 +49,8 @@ const Home: FC = () => {
                 <LeftColumn>
                     <Hello>Hello!</Hello>
                     <Script>I am so pleased you are here.</Script>
+                    {isMobile && <ReadMoreButton onClick={() => setShowIntro(true)}>Read More</ReadMoreButton>}
+
                     {/* <TopLine>
                             We would like to share a little about our journey to
                             creating

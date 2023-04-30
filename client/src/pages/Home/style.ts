@@ -222,3 +222,9 @@ export const Image = styled.img`
         width: 90%;
     }
 `;
+
+export const ReadMoreButton = styled.button`
+    background-color: ${colors.white};
+    border: 1px solid ${colors.black};
+    padding: 8px 32px;
+`;
