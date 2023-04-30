@@ -27,29 +27,37 @@ import {
     Image,
     Stripe,
     ReadMoreButton,
+    ReadMoreButtonContainer,
 } from './style';
-import { set } from 'mongoose';
-
 
 const Home: FC = () => {
-    const [showIntro, setShowIntro] = useState<boolean>(false)
+    const [showIntro, setShowIntro] = useState<boolean>(false);
     const navigate = useNavigate();
-    const isMobile: boolean = useSelector((store: RootState) => store?.isMobile?.isMobile);
+    const isMobile: boolean = useSelector(
+        (store: RootState) => store?.isMobile?.isMobile
+    );
 
     return (
         <Layout isMobile={isMobile}>
-            <ImagePanel>
+            <ImagePanel isMobile={isMobile}>
                 <Image
                     src={chatting}
                     alt='ladies chatting outside'
+                    isMobile={isMobile}
                 />
-                <Stripe />
+                {!isMobile && <Stripe />}
             </ImagePanel>
             <GreetingsPanel>
                 <LeftColumn>
                     <Hello>Hello!</Hello>
                     <Script>I am so pleased you are here.</Script>
-                    {isMobile && <ReadMoreButton onClick={() => setShowIntro(true)}>Read More</ReadMoreButton>}
+                    {isMobile && !showIntro && (
+                        <ReadMoreButtonContainer>
+                            <ReadMoreButton onClick={() => setShowIntro(true)}>
+                                Read More
+                            </ReadMoreButton>
+                        </ReadMoreButtonContainer>
+                    )}
 
                     {/* <TopLine>
                             We would like to share a little about our journey to
