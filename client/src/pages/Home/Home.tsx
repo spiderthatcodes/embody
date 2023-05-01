@@ -59,11 +59,6 @@ const Home: FC = () => {
                         </ReadMoreButtonContainer>
                     )}
 
-                    {/* <TopLine>
-                            We would like to share a little about our journey to
-                            creating
-                        </TopLine>
-                        <Embody><span>&nbsp;Embody.&nbsp;</span></Embody> */}
                     <LeftParagraph>
                         We met many years ago when our sons were in preschool
                         together and became fast friends. Since that time we
