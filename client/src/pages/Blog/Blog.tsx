@@ -6,7 +6,10 @@ import { BlogType } from '../../types';
 import Layout from '../../components/Layout/Layout';
 
 const Blog: FC = () => {
-    const blogs = useSelector((store: RootState) => store?.blogs?.blogs);
+    const blogs: BlogType[] = useSelector((store: RootState) => store?.blogs?.blogs);
+    const isMobile: boolean = useSelector(
+        (store: RootState) => store?.isMobile?.isMobile
+    );
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -17,7 +20,7 @@ const Blog: FC = () => {
     console.log(blogs);
 
     return (
-        <Layout>
+        <Layout isMobile={isMobile} >
             {blogs && blogs.map((blog: BlogType) => <p key={blog._id}>{blog.title}</p>)}
         </Layout>
     );

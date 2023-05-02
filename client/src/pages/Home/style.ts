@@ -188,16 +188,14 @@ export const LearnMore = styled.button`
     }
 `;
 
-export const ImagePanel = styled.div`
+export const ImagePanel = styled.div<{ isMobile?: boolean }>`
     height: 110vh;
     width: 100%;
     position: relative;
 
-    @media (max-width: 900px) {
-        height: 20vh;
-        margin-bottom: 40px;
-        position: static;
-    }
+    ${({ isMobile }) =>
+        isMobile &&
+        'height: 20vh; margin-bottom: 40px; position: static;'}
 `;
 
 export const Stripe = styled.div`
@@ -207,18 +205,21 @@ export const Stripe = styled.div`
     position: absolute;
     bottom: 20%;
     z-index: -1;
-
-    @media (max-width: 900px) {
-        height: 10vh;
-        width: 100%;
-        top: 20%;
-    }
 `;
 
-export const Image = styled.img`
-    width: 90%;
+export const Image = styled.img<{ isMobile?: boolean }>`
+    width: ${({ isMobile }) => (isMobile ? '100%' : '90%')};
+`;
 
-    @media (max-width: 900px) {
-        width: 90%;
-    }
+export const ReadMoreButton = styled.button`
+    background-color: ${colors.white};
+    border: 1px solid ${colors.black};
+    padding: 10px 42px;
+`;
+
+export const ReadMoreButtonContainer = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0 50px;
 `;

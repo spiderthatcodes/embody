@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../app/store';
@@ -26,31 +26,39 @@ import {
     ImagePanel,
     Image,
     Stripe,
+    ReadMoreButton,
+    ReadMoreButtonContainer,
 } from './style';
 
-
 const Home: FC = () => {
+    const [showIntro, setShowIntro] = useState<boolean>(false);
     const navigate = useNavigate();
-    const isMobile = useSelector((store: RootState) => store?.isMobile?.isMobile);
+    const isMobile: boolean = useSelector(
+        (store: RootState) => store?.isMobile?.isMobile
+    );
 
     return (
         <Layout isMobile={isMobile}>
-            <ImagePanel>
+            <ImagePanel isMobile={isMobile}>
                 <Image
                     src={chatting}
                     alt='ladies chatting outside'
+                    isMobile={isMobile}
                 />
-                <Stripe />
+                {!isMobile && <Stripe />}
             </ImagePanel>
             <GreetingsPanel>
                 <LeftColumn>
                     <Hello>Hello!</Hello>
                     <Script>I am so pleased you are here.</Script>
-                    {/* <TopLine>
-                            We would like to share a little about our journey to
-                            creating
-                        </TopLine>
-                        <Embody><span>&nbsp;Embody.&nbsp;</span></Embody> */}
+                    {isMobile && !showIntro && (
+                        <ReadMoreButtonContainer>
+                            <ReadMoreButton onClick={() => setShowIntro(true)}>
+                                Read More
+                            </ReadMoreButton>
+                        </ReadMoreButtonContainer>
+                    )}
+
                     <LeftParagraph>
                         We met many years ago when our sons were in preschool
                         together and became fast friends. Since that time we
