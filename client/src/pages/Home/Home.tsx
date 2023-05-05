@@ -113,7 +113,7 @@ const Home: FC = () => {
                         Create a life that feels peaceful and authentic.
                     </BlackText>
                 </Left>
-                {!isMobile && <Right />}
+                <Right />
             </RosePanel>
         </Layout>
     );

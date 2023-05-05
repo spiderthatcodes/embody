@@ -20,10 +20,6 @@ export const Left = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 40px;
-    @media (max-width: 900px) {
-        background-color: ${colors.mint};
-        padding: 20px;
-    }
 `;
 
 export const Right = styled.div`
@@ -36,9 +32,6 @@ export const BlackText = styled.p`
     color: ${colors.white};
     font-size: 56px;
     text-align: center;
-    @media (max-width: 900px) {
-        font-size: 24px;
-    }
 `;
 
 export const Leaves = styled.div`
