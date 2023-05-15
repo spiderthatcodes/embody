@@ -39,9 +39,6 @@ export const Leaves = styled.div`
     background-size: cover;
     width: 100%;
     height: 50vh;
-    @media (max-width: 900px) {
-        height: 25vh;
-    }
 `;
 
 export const PeachPanel = styled.div`
@@ -50,9 +47,6 @@ export const PeachPanel = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 900px) {
-        height: 25vh;
-    }
 `;
 
 export const WhiteText = styled.p`
@@ -60,10 +54,6 @@ export const WhiteText = styled.p`
     font-size: 40px;
     text-align: center;
     width: 45%;
-    @media (max-width: 900px) {
-        font-size: 24px;
-        width: 80%;
-    }
 `;
 
 export const GreetingsPanel = styled.div`
@@ -73,12 +63,6 @@ export const GreetingsPanel = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media (max-width: 900px) {
-        height: auto;
-        padding: 1%;
-        display: flex;
-        flex-direction: column;
-    }
 `;
 
 export const Hello = styled.h1`
@@ -93,9 +77,6 @@ export const Script = styled.h2`
     top: -25px;
     left: 2%;
     font-family: 'Tangerine', cursive;
-    @media (max-width: 900px) {
-        position: static;
-    }
 `;
 
 export const Embody = styled.h1`
@@ -151,11 +132,6 @@ export const LeftParagraph = styled.div`
     position: relative;
     left: 40px;
     top: -30px;
-    @media (max-width: 900px) {
-        position: static;
-        width: auto;
-        margin-bottom: 0;
-    }
 `;
 
 export const TopLine = styled.div`
@@ -166,9 +142,6 @@ export const TopLine = styled.div`
     position: relative;
     left: 40px;
     top: -30px;
-    @media (max-width: 900px) {
-        position: static;
-    }
 `;
 
 export const LearnMore = styled.button`
@@ -176,9 +149,6 @@ export const LearnMore = styled.button`
     border: none;
     background: none;
     font-size: 32px;
-    @media (max-width: 900px) {
-        padding: 40px 0 40px 5px;
-    }
 `;
 
 export const ImagePanel = styled.div<{ isMobile?: boolean }>`
