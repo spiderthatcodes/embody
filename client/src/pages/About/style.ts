@@ -46,8 +46,8 @@ export const GreenStrip = styled.div`
     @media (max-width: 900px) {
         height: 20vh;
         p {
-        font-size: 24px;
-    }
+            font-size: 24px;
+        }
     }
 `;
 
@@ -59,25 +59,26 @@ export const BioCardContainer = styled.div`
     }
 `;
 
-export const TopImagePanel = styled.div`
+export const TopImagePanel = styled.div<{ isMobile?: boolean }>`
     display: flex;
+    flex-direction: ${({ isMobile }) => (isMobile ? 'column-reverse' : 'row')};
     width: 100%;
 `;
 
-export const LeftSide = styled.div`
+export const LeftSide = styled.div<{ isMobile?: boolean }>`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55vw;
+    width: ${({ isMobile }) => (isMobile ? '100%' : '55vw')};
 
     h1 {
         text-align: left;
-        width: 35vw;
+        width: ${({ isMobile }) => (isMobile ? '90%' : '35vw')};
         margin-bottom: 100px;
         line-height: 64px;
         font-weight: 400;
-        font-size: 40px;
+        font-size: ${({ isMobile }) => (isMobile ? '28px' : '40px')};
     }
 
     .greenStuff {
@@ -85,6 +86,7 @@ export const LeftSide = styled.div`
         font-size: 44px;
         display: inline-block;
         border-bottom: 6px solid ${colors.mint};
+        text-align: ${({ isMobile }) => (isMobile && 'right')};
     }
 
     div {
@@ -94,8 +96,8 @@ export const LeftSide = styled.div`
     }
 `;
 
-export const RightSide = styled.div`
+export const RightSide = styled.div<{ isMobile?: boolean }>`
     img {
-        width: 45vw;
+        width: ${({ isMobile }) => (isMobile ? '100%' : '45vw')};
     }
 `;

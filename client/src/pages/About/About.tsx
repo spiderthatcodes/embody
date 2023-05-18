@@ -24,12 +24,12 @@ const About: FC = () => {
 
     return (
         <Layout isMobile={isMobile} >
-            <TopImagePanel>
-                <LeftSide>
+            <TopImagePanel isMobile={isMobile}>
+                <LeftSide isMobile={isMobile}>
                     <h1>We are passionate about helping you remember <span className='greenStuff'>who you are.</span></h1>
                     <div></div>
                 </LeftSide>
-                <RightSide>
+                <RightSide isMobile={isMobile}>
                     <img src={laughing} alt="ladies laughing" />
                 </RightSide>
             </TopImagePanel>
