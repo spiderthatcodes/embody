@@ -75,7 +75,7 @@ export const LeftSide = styled.div<{ isMobile?: boolean }>`
     h1 {
         text-align: left;
         width: ${({ isMobile }) => (isMobile ? '90%' : '35vw')};
-        margin-bottom: 100px;
+        margin-bottom:  ${({ isMobile }) => (isMobile ? '0' : '100px')};
         line-height: 64px;
         font-weight: 400;
         font-size: ${({ isMobile }) => (isMobile ? '28px' : '40px')};
@@ -89,7 +89,11 @@ export const LeftSide = styled.div<{ isMobile?: boolean }>`
         text-align: ${({ isMobile }) => (isMobile && 'right')};
     }
 
-    div {
+    #mobilespan {
+
+    }
+
+    #tanstripe {
         height: 25vh;
         width: 100%;
         background-color: ${colors.tan};

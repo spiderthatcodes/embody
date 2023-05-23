@@ -20,17 +20,36 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../app/store';
 
 const About: FC = () => {
-    const isMobile = useSelector((store: RootState) => store?.isMobile?.isMobile);
+    const isMobile = useSelector(
+        (store: RootState) => store?.isMobile?.isMobile
+    );
 
     return (
-        <Layout isMobile={isMobile} >
+        <Layout isMobile={isMobile}>
             <TopImagePanel isMobile={isMobile}>
                 <LeftSide isMobile={isMobile}>
-                    <h1>We are passionate about helping you remember <span className='greenStuff'>who you are.</span></h1>
-                    <div></div>
+                    {isMobile ? (
+                        <>
+                            <h1>
+                                We are passionate about helping you remember
+                            </h1>
+                            <div>
+                                <span className='greenStuff'>who you are.</span>
+                            </div>
+                        </>
+                    ) : (
+                        <h1>
+                            We are passionate about helping you remember{' '}
+                            <span className='greenStuff'>who you are.</span>
+                        </h1>
+                    )}
+                    {/* <div></div> */}
                 </LeftSide>
                 <RightSide isMobile={isMobile}>
-                    <img src={laughing} alt="ladies laughing" />
+                    <img
+                        src={laughing}
+                        alt='ladies laughing'
+                    />
                 </RightSide>
             </TopImagePanel>
             <BioCardContainer>
