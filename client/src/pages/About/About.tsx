@@ -33,7 +33,7 @@ const About: FC = () => {
                             <h1>
                                 We are passionate about helping you remember
                             </h1>
-                            <div>
+                            <div id='mobilespan'>
                                 <span className='greenStuff'>who you are.</span>
                             </div>
                         </>
@@ -43,7 +43,7 @@ const About: FC = () => {
                             <span className='greenStuff'>who you are.</span>
                         </h1>
                     )}
-                    {/* <div></div> */}
+                    <div id='tanstripe'></div>
                 </LeftSide>
                 <RightSide isMobile={isMobile}>
                     <img

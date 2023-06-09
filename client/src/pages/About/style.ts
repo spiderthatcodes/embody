@@ -90,7 +90,7 @@ export const LeftSide = styled.div<{ isMobile?: boolean }>`
     }
 
     #mobilespan {
-
+        
     }
 
     #tanstripe {
