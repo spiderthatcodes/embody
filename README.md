@@ -1,4 +1,4 @@
-# Embody Coaching & Counseling
+# Stephanie Morales Coaching & Counseling
 
 This is the website for a small business. The goal of the site is to establish a professional online presense for Stephanie Morales and her coaching business.
 
